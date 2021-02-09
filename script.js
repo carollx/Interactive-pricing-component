@@ -36,7 +36,6 @@ switchDiscount.onchange = function () {
   }
 }
 
-
 function precoPorViews(views) {
   var price = 0;
 
