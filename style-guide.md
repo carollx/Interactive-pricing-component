@@ -23,8 +23,8 @@ The designs were created to the following widths:
 - Very Pale Blue (Main Background): hsl(230, 100%, 99%)
 - Light Grayish Blue (Empty Slider Bar): hsl(224, 65%, 95%)
 - Light Grayish Blue (Toggle Background): hsl(223, 50%, 87%)
-- Grayish Blue (Text): hsl(225, 20%, 60%)
-- Dark Desaturated Blue (Text & CTA Background): hsl(227, 35%, 25%)
+- Grayish Blue (Text): hsl(225, 20%, 60%)		*h2
+- Dark Desaturated Blue (Text & CTA Background): hsl(227, 35%, 25%) *h1
 
 ## Typography
 

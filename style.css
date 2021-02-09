@@ -1,3 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0
+}
+
+body {
+  max-width: 1440px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  background-color: hsl(230, 100%, 99%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -5,4 +20,202 @@
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.container {
+  text-align: center;
+}
+
+#topo {
+  margin: 5rem auto;
+}
+
+.grayishBlueText {
+  color: hsl(225, 20%, 60%);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+span.grayishBlueText {
+  display: inline;
+  position: relative;
+  top: -10px;
+  transform: translateY(-50%);
+}
+
+.darkText {
+  color: hsl(227, 35%, 25%);
+  font-weight: 800;
+}
+
+#topo>h2 {
+  font-size: 1rem;
+  padding-top: 0.6rem;
+}
+
+.input {
+  margin: .4rem;
+  width: 95%;
+  padding-bottom: 1.5rem;
+}
+
+#precoInput {
+  background: linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) 50%, hsl(224, 65%, 95%) 50%, hsl(224, 65%, 95%) 100%);
+  border-radius: 8px;
+  height: 7px;
+  width: 95%;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+/*Chrome thumb*/
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  background: hsl(174, 86%, 45%);
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0px 10px 35px -2px hsl(174, 86%, 45%);
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  box-shadow: 0px 10px 35px -2px hsl(174, 86%, 45%);
+  background: #1fab9e;
+  background-image: url("images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: grab;
+}
+
+
+.precosVisualizacoes {
+  width: 37%;
+  margin: 10rem auto;
+}
+
+p.visualizacoes,
+p.valorPorMes {
+  display: inline;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+p.visualizacoes {
+  float: left;
+  letter-spacing: 2px;
+  font-size: small;
+  font-weight: 900;
+}
+
+p.valorPorMes {
+  float: right;
+  font-size: 3rem;
+}
+
+.precosVisualizacoesTexto {
+  width: 100%;
+  height: 4rem;
+  /* border: 1px solid red; */
+  margin-bottom: 2rem;
+}
+
+
+
+/************************************************/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 35px;
+}
+
+.slider:hover {
+  background-color: hsl(174, 86%, 45%);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 5px;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 30px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: hsl(174, 86%, 45%)
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.discount {
+  /* border: 1px red solid; */
+  width: 100%;
+  height: 20%;
+  position: relative;
+}
+
+.discount>p {
+  display: inline;
+  position: relative;
+  top: 5px;
+  padding: 0 2rem;
+  font-size: 0.9rem;
+}
+
+.discountText {
+  color: hsl(15, 100%, 70%);
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding-left: 1rem;
 }
