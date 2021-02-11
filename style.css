@@ -27,7 +27,13 @@ body {
 }
 
 #topo {
-  margin: 5rem auto;
+  margin-top: 2rem;
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+  background-image: url('images/pattern-circles.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 .grayishBlueText {
@@ -46,6 +52,7 @@ span.grayishBlueText {
 .darkText {
   color: hsl(227, 35%, 25%);
   font-weight: 800;
+  
 }
 
 #topo>h2 {
@@ -69,36 +76,9 @@ span.grayishBlueText {
   -webkit-appearance: none;
 }
 
-/*Chrome thumb*/
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -webkit-border-radius: 5px;
-  height: 40px;
-  width: 40px;
-  border-radius: 30px;
-  background: hsl(174, 86%, 45%);
-  cursor: pointer;
-}
-
-input[type="range"]::-webkit-slider-thumb:hover {
-  box-shadow: 0px 10px 35px -2px hsl(174, 86%, 45%);
-}
-
-input[type="range"]::-webkit-slider-thumb:active {
-  box-shadow: 0px 10px 35px -2px hsl(174, 86%, 45%);
-  background: #1fab9e;
-  background-image: url("images/icon-slider.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: grab;
-}
-
-
 .precosVisualizacoes {
   width: 37%;
-  margin: 10rem auto;
+  margin: 3.5rem auto;
 }
 
 p.visualizacoes,
@@ -124,11 +104,126 @@ p.valorPorMes {
 .precosVisualizacoesTexto {
   width: 100%;
   height: 4rem;
-  /* border: 1px solid red; */
   margin-bottom: 2rem;
 }
 
+.discount {
+  width: 100%;
+  height: 20%;
+  position: relative;
+}
 
+.discount>p {
+  display: inline;
+  position: relative;
+  left: 40px;
+  top: 5px;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+}
+
+.discountText {
+  color: hsl(15, 100%, 70%);
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding-left: 1rem;
+}
+
+.beneficios {
+  width: 37%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+img.imgCheck {
+  position: absolute;
+  left: 0;
+  height: 15px;
+  transform: translateY(30%);
+}
+
+p.liText {
+  display: flex;
+}
+
+.liItem {
+  margin-bottom: 0.7rem;
+}
+
+.pList {
+  padding-left: 2rem;
+}
+
+ul {
+  position: relative;
+}
+
+.botao {
+  background-color: #293356;
+  -webkit-border-top-left-radius: 28px;
+  -moz-border-radius-topleft: 28px;
+  border-top-left-radius: 28px;
+  -webkit-border-top-right-radius: 28px;
+  -moz-border-radius-topright: 28px;
+  border-top-right-radius: 28px;
+  -webkit-border-bottom-right-radius: 28px;
+  -moz-border-radius-bottomright: 28px;
+  border-bottom-right-radius: 28px;
+  -webkit-border-bottom-left-radius: 28px;
+  -moz-border-radius-bottomleft: 28px;
+  border-bottom-left-radius: 28px;
+  text-indent: 0;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  height: 41px;
+  line-height: 41px;
+  width: 173px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.botao:hover {
+  background-color: #343e5c;
+}
+
+.botao:active {
+  position: relative;
+  top: 1px;
+}
+
+/****************Chrome thumb***************/
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  background: hsl(174, 86%, 45%);
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0px 10px 35px -2px hsl(174, 86%, 45%);
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  box-shadow: 0px 10px 35px -2px hsl(174, 86%, 45%);
+  background: #1fab9e;
+  background-image: url("images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: grab;
+}
+/*************************************************/
 
 /************************************************/
 /* The switch - the box around the slider */
@@ -137,6 +232,7 @@ p.valorPorMes {
   display: inline-block;
   width: 70px;
   height: 35px;
+  left: 2.5rem;
 }
 
 .slider:hover {
@@ -197,25 +293,5 @@ input:checked+.slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+/*********************************/
 
-.discount {
-  /* border: 1px red solid; */
-  width: 100%;
-  height: 20%;
-  position: relative;
-}
-
-.discount>p {
-  display: inline;
-  position: relative;
-  top: 5px;
-  padding: 0 2rem;
-  font-size: 0.9rem;
-}
-
-.discountText {
-  color: hsl(15, 100%, 70%);
-  font-weight: 800;
-  font-size: 0.8rem;
-  padding-left: 1rem;
-}
