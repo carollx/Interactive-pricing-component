@@ -20,26 +20,27 @@
   <div class="container">
     <div id="topo">
       <h1 class="darkText">Simple, traffic-based pricing</h1>
-      <h2 class="grayishBlueText">Sign-up for our 30-day trial. No credit card required.</h2>
+      <h2 class="grayishBlueText">Sign-up for our 30-day trial.</h2>
+      <h2 class="grayishBlueText">No credit card required.</h2>
     </div>
 
     <div class="precosVisualizacoes">
-      <div class="precosVisualizacoesTexto">
-        <p id="views" class="visualizacoes grayishBlueText"></p>
-        <p id="price" class="valorPorMes darkText"></p>
-      </div>
+      <!-- <div class="precosVisualizacoesTexto"> -->
+      <p id="views" class="visualizacoes grayishBlueText precosVisualizacoesTexto"></p>
+      <p id="price" class="valorPorMes darkText precosVisualizacoesTexto"></p>
+      <!-- </div> -->
 
       <div class="input">
         <input type="range" id="precoInput" name="preco" min="1" max="5">
       </div>
 
       <div class="discount grayishBlueText">
-        <p class="">Monthly Billing </p>
+        <p class="monthlyBilling">Monthly Billing </p>
         <label class="switch">
           <input id="switchDiscount" type="checkbox">
           <span class="slider round"></span>
         </label>
-        <p>Yearly Billing <span class="discountText"> 25% discount</span></p>
+        <p class="yearlyBilling">Yearly Billing <span class="discountText">25%</span></p>
       </div>
     </div>
 
@@ -48,33 +49,33 @@
         <ul>
           <li class="liItem">
             <img src="images/icon-check.svg" class="imgCheck">
-            <div class="pList">
-              <p class="liText">Unlimited websites</p>
-            </div>
+            <!-- <div class="pList"> -->
+            <span class="liText">Unlimited websites</span>
+            <!-- </div> -->
           </li>
           <li class="liItem">
             <img src="images/icon-check.svg" class="imgCheck">
-            <div class="pList">
-              <p class="liText">100% data ownership</p>
-            </div>
+            <!-- <div class="pList"> -->
+            <span class="liText">100% data ownership</span>
+            <!-- </div> -->
           </li>
           <li class="liItem">
             <img src="images/icon-check.svg" class="imgCheck">
-            <div class="pList">
-              <p class="liText">Email reports</p>
-            </div>
+            <!-- <div class="pList"> -->
+            <span class="liText">Email reports</span>
+            <!-- </div> -->
           </li>
         </ul>
       </div>
 
-      <div class="">
+      <div class="btn">
         <a href="#" type="button" class="botao">Start my trial</a>
       </div>
     </div>
 
-    <div class=" attribution">
+    <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Carol</a>.
+      Coded by <a href="https://github.com/carollx/Interactive-pricing-component" target="_blank">Carol</a>.
     </div>
   </div>
 </body>
